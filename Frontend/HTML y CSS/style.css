@@ -1,0 +1,285 @@
+
+body{
+    /*background-color: rgb(244, 245, 197);*/
+    background-image: url("nuevofondo.jpg");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+
+h1{
+    color: rebeccapurple;
+}
+
+.contenidodua { 
+    text-align:center;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  /* .boton_dua {
+    background-color:salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+  }
+  .button {
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .boton_dua:hover{
+    background-color:rgba(250, 128, 114, 0.801);
+  } */
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  float: right;
+}
+  .boton_dua {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .boton_dua::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.2s;
+  }
+  .boton_dua:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .boton_dua::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .boton_dua:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+  .buscardua{
+    position: absolute;
+    left: 86%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+
+  }
+
+  input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 10px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid rgb(241, 110, 95);
+    transition: all .5s ease;
+  }
+
+  ::placeholder {
+    color: grey;
+  }
+
+  .btndua {
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: rgb(241, 110, 95);
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    }
+  /* lupa */
+
+  .btndua i {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    transition: all .7s ease;
+  }
+
+  .buscardua:hover input {
+    width: 350px;
+  }
+
+  .buscardua:hover i {
+    transform: rotate(-360deg);
+  }
+
+  .btndua:hover {
+    background: rgb(253, 116, 101);
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* instagram */
+  .fa-instagram {
+    background: #0e4066;
+    color: white;
+  }
+
+  /* youtube */
+  .fa-youtube {
+    background: #c91414;
+    color: white;
+  }
+
+  /* Style buttons */
+.btn1 {
+  background-color: rgb(155, 32, 236); 
+  border: none; 
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  float:left;
+  height: 10%;
+}
+
+/* Darker background on mouse-over */
+.btn1:hover {
+  background-color: rgb(147, 16, 235);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 1000; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
